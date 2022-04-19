@@ -1,0 +1,143 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100%);
+}
+
+.modal__container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__btn {
+  height: 64px;
+  width: 190px;
+  box-shadow: 0 0 5px #aba4a4;
+  border: none;
+  border-radius: 8px;
+  font-size: 2rem;
+  transition: 0.25s;
+}
+.modal__btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.modal__outer {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: fade 0.25s ease;
+          animation: fade 0.25s ease;
+}
+
+.modal__inner {
+  width: 450px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 360px;
+  -webkit-animation: drop 0.25s ease, fade 0.25s ease;
+          animation: drop 0.25s ease, fade 0.25s ease;
+}
+.modal__inner .modal__header {
+  height: 50px;
+  background-color: #e26e70;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.modal__inner .modal__header .modal__closeBtn {
+  height: 100%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__inner .modal__header .modal__closeBtn:hover {
+  cursor: pointer;
+}
+.modal__inner .modal__header svg {
+  margin: auto 0;
+  margin-left: auto;
+  font-size: 2rem;
+}
+
+.modal__body {
+  padding: 12px;
+  background-color: white;
+}
+.modal__body h2 {
+  color: #e26e70;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+.modal__body p {
+  font-size: 1.6rem;
+}
+
+.modal__footer {
+  background-color: white;
+  padding: 12px;
+  text-align: right;
+}
+.modal__footer button {
+  border: none;
+  border-radius: 8px;
+  background-color: #e26e70;
+  width: 75px;
+  height: 36px;
+  color: white;
+  font-weight: 600;
+}
+.modal__footer button:hover {
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,87 @@
+.gallery-body {
+  background-color: #17a2b8;
+   background-image: linear-gradient(60deg, #17a2b8, #2378c7);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-body .wrapper {
+  width: 1200px;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transform: scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.4s;
+
+  .close-btn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .btn {
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 100px;
+    border: 1px solid transparent;
+    font-size: 5rem;
+
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+  }
+}
+
+.active {
+  transform: scale(1);
+  pointer-events: all;
+  opacity: 1;
+}
