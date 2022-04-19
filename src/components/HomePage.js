@@ -7,13 +7,13 @@ function HomePage() {
     <div className="homePage">
       <span className="title">Click a button below</span>
       <div className="container">
-        <Link className="homePage__link" to={"/carousel"}>
+        <Link className="homePage__link" to={"/some-demo/carousel"}>
           carousel
         </Link>
-        <Link className="homePage__link" to={"/modal"}>
+        <Link className="homePage__link" to={"/some-demo/modal"}>
           modal
         </Link>
-        <Link className="homePage__link" to={"/gallery"}>
+        <Link className="homePage__link" to={"/some-demo/gallery"}>
           gallery
         </Link>
       </div>
